@@ -35,7 +35,7 @@ jobs:
         node-version: '20'
 
     - name: Install & Build Frontend
-      working-directory: ./reac
+      working-directory: ./reac/front
       run: |
         npm ci
         npm run build
