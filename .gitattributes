@@ -1,8 +1,4 @@
-# Force Linguist to completely ignore all JavaScript and TypeScript files in stats
-*.js linguist-detectable=false
-*.jsx linguist-detectable=false
-*.ts linguist-detectable=false
-*.tsx linguist-detectable=false
-
-# Force Python files to be explicitly tracked
-*.py linguist-detectable=true
+# Clear the previous blocks and use this to ignore heavy auto-generated frontend files
+**/node_modules/* linguist-vendored
+**/build/* linguist-vendored
+**/dist/* linguist-vendored
