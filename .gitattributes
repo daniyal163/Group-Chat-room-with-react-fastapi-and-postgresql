@@ -1,3 +1,8 @@
-# Ignore node_modules or build folders from language statistics
-node_modules/* linguist-documentation
-build/* linguist-documentation
+# Force Linguist to completely ignore all JavaScript and TypeScript files in stats
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.ts linguist-detectable=false
+*.tsx linguist-detectable=false
+
+# Force Python files to be explicitly tracked
+*.py linguist-detectable=true
